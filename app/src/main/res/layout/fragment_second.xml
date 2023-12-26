@@ -2,28 +2,33 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<FrameLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".SecondFragment"
+    android:orientation="vertical"
+    >
     <TextView
+        android:id="@+id/secondText"
         android:layout_width="162dp"
         android:layout_height="65dp"
         android:text="second Fragment"
         android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="33dp"
+        android:textSize="25sp"
 
         />
 
     <Button
+        android:id="@+id/secondButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button"
+        android:text="button2"
         android:layout_gravity="center"
 
 
         />
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

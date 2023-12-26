@@ -2,25 +2,32 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<FrameLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/firstText"
         android:layout_width="162dp"
         android:layout_height="65dp"
         android:text="First Fragment"
-android:gravity="center"
-        ></TextView>
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="33dp"
+        />
 
     <Button
+        android:id="@+id/firstButtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button"
+        android:text="Button"
         android:layout_gravity="center"
-        ></Button>
+        android:textSize="21sp"
+        />
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
